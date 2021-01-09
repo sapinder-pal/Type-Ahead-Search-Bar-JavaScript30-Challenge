@@ -16,7 +16,8 @@ input {
 }
 
 .search-form {
-  max-width: 400px;
+	min-width: 50vw;
+	max-width: 600px;
   margin: 50px auto;
 }
 
@@ -39,7 +40,6 @@ input {
   margin: 0;
   padding: 0;
   position: relative;
-  /*perspective: 20px;*/
 }
 
 .suggestions li {
@@ -54,7 +54,6 @@ input {
   justify-content: space-between;
   text-transform: capitalize;
 }
-
 .suggestions li:nth-child(even) {
   transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
   background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
