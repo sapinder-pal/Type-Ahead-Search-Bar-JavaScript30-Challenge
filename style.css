@@ -16,8 +16,7 @@ input {
 }
 
 .search-form {
-	min-width: 50vw;
-	max-width: 600px;
+	max-width: 400px;
   margin: 50px auto;
 }
 
@@ -32,7 +31,7 @@ input {
   top: 10px;
   z-index: 2;
   border-radius: 5px;
-  font-size: 30px;
+  font-size: 25px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
 }
 
@@ -53,7 +52,6 @@ input {
   display: flex;
   justify-content: space-between;
 	text-transform: capitalize;
-	font-weight: bold;
 }
 .suggestions li:nth-child(even) {
   transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
@@ -70,4 +68,10 @@ span.population {
 }
 .highlight {
   background: #ffc600;
+}
+
+@media (max-width: 600px) {
+	.search-form {
+		width: 80vw;
+	}
 }
